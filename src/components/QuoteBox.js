@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 import quotes from "../quotes.json";
 import { useState } from "react";
 
@@ -23,6 +22,7 @@ const QuoteBox = () => {
     setQuote(quotes[getNumber(quotes.length)]);
     setBackground(colors[getNumber(colors.length)]);
   };
+
   return (
     <div className="app" style={{ background }}>
       <div className="quotes">
@@ -34,13 +34,16 @@ const QuoteBox = () => {
         </div>
         <div className="h4boton">
           <i>
-            <h4 style={{ color: background }}>{quote.author}</h4>
+            <h4 id="demo" style={{ color: background }}>
+              {quote.author}
+            </h4>
           </i>
+          <button onClick={handleUser}>
+            <i className="fas fa-greater-than" style={{ background }}></i>
+          </button>
         </div>
-      <Button />
       </div>
     </div>
-    
   );
 };
 const getNumber = (max) => Math.floor(Math.random() * max);
