@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/components-useState-app/static/css/main.b2f0fd34.css",
-    "main.js": "/components-useState-app/static/js/main.83b47ca9.js",
-    "index.html": "/components-useState-app/index.html",
-    "main.b2f0fd34.css.map": "/components-useState-app/static/css/main.b2f0fd34.css.map",
-    "main.83b47ca9.js.map": "/components-useState-app/static/js/main.83b47ca9.js.map"
+    "main.css": "/react01/static/css/main.b2f0fd34.css",
+    "main.js": "/react01/static/js/main.83b47ca9.js",
+    "index.html": "/react01/index.html",
+    "main.b2f0fd34.css.map": "/react01/static/css/main.b2f0fd34.css.map",
+    "main.83b47ca9.js.map": "/react01/static/js/main.83b47ca9.js.map"
   },
   "entrypoints": [
     "static/css/main.b2f0fd34.css",
