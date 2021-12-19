@@ -1,6 +1,7 @@
 import React from "react";
 import quotes from "../quotes.json";
 import { useState } from "react";
+import Button from "./Button";
 
 const QuoteBox = () => {
   const colors = [
@@ -11,6 +12,9 @@ const QuoteBox = () => {
     "#FFC75F",
     "#845EC2",
     "#008F7A",
+    "#C34A36",
+    "#D5CABD",
+    "#9B89B3",
   ];
 
   const [quote, setQuote] = useState(quotes[getNumber(quotes.length)]);
@@ -34,13 +38,9 @@ const QuoteBox = () => {
         </div>
         <div className="h4boton">
           <i>
-            <h4 id="demo" style={{ color: background }}>
-              {quote.author}
-            </h4>
+            <h4 style={{ color: background }}>{quote.author}</h4>
           </i>
-          <button onClick={handleUser}>
-            <i className="fas fa-greater-than" style={{ background }}></i>
-          </button>
+          <Button changeUser={handleUser} background={background}/>
         </div>
       </div>
     </div>
